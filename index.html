@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="scoreboard">
+				<div id="game-title">
+					ROCK <br />
+					PAPER <br />
+					SCISSORS <br />
+				</div>
+				<div id="all-scores">
+					<div class="scores">
+						<div class="score-title">Computer Score</div>
+						<div id="computer-score" class="individual-score">0</div>
+					</div>
+					<div class="scores">
+						<div class="score-title">
+							Your <br />
+							score
+						</div>
+						<div id="user-score" class="individual-score">0</div>
+					</div>
+				</div>
+			</div>
+			<div class="hands">
+				<div class="hand rock">
+					<div
+						style="
+							width: 160px;
+							height: 160px;
+							border: 20px solid #0074b6;
+							padding-top: 16%;
+							padding-left: 12%;
+							background-color: white;
+							border-radius: 100%;
+						"
+						onclick="pickUserHand('rock')">
+						<img src="icons8-fist-67 1.svg" alt="rock" />
+					</div>
+				</div>
+				<div class="hand scissor">
+					<div
+						style="
+							width: 160px;
+							height: 160px;
+							border: 20px solid #bd00ff;
+							padding-top: 18%;
+							padding-left: 25%;
+							background-color: white;
+							border-radius: 100%;
+						"
+						onclick="pickUserHand('scissor')">
+						<img src="17911 1.svg" alt="scissor" />
+					</div>
+				</div>
+				<div class="hand paper">
+					<div
+						style="
+							width: 160px;
+							height: 160px;
+							border: 20px solid #ffa943;
+							padding-top: 15%;
+							padding-left: 15%;
+							background-color: white;
+							border-radius: 100%;
+						"
+						onclick="pickUserHand('paper')">
+						<img src="icons8-hand-64 1.svg" alt="paper" />
+					</div>
+				</div>
+			</div>
+			<div class="contest">
+				<div class="user-hand" id="users-hand">
+					<h1 style="z-index: 1">YOU PICKED</h1>
+					<div class="handImageContainer" id="user-pick">
+						<div
+							style="
+								width: 160px;
+								height: 160px;
+								border: 20px solid #bd00ff;
+								padding-top: 18%;
+								padding-left: 25%;
+								background-color: white;
+								border-radius: 100%;
+							"
+							id="user-pick-animation">
+							<img src="17911 1.svg" alt="scissor" />
+						</div>
+					</div>
+				</div>
+				<div class="referee">
+					<div class="decision">
+						<p id="message1">YOU WIN</p>
+						<p id="message2">Against PC</p>
+					</div>
+					<div class="new-game" onclick="playAgain()" id="game-button">
+						PLAY AGAIN
+					</div>
+				</div>
+				<div class="computer-hand" id="computers-hand">
+					<h1>PC PICKED</h1>
+					<div class="handImageContainer" id="computer-pick">
+						<div
+							style="
+								width: 160px;
+								height: 160px;
+								border: 20px solid #bd00ff;
+								padding-top: 18%;
+								padding-left: 25%;
+								background-color: white;
+								border-radius: 100%;
+							"
+							id="computer-pick-animation">
+							<img src="17911 1.svg" alt="scissor" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="notice-board">
+				<div id="cross">
+					<img
+						alt="cross"
+						src="X.svg"
+						width="35px"
+						height="35px"
+						style="margin-left: 10%; margin-top: 9%" />
+				</div>
+				<div id="notice-container">
+					<div id="notice">
+						<h1 style="text-align: center; margin-top: 7%">Game Rules</h1>
+						<ul>
+							<li>
+								Rock beats scissors, scissors beat paper, and paper beats rock.
+							</li>
+							<li>
+								Agree ahead of time whether you’ll count off “rock, paper,
+								scissors, shoot” or just “rock, paper, scissors.”
+							</li>
+							<li>
+								Use rock, paper, scissors to settle minor decisions or simply
+								play to pass the time
+							</li>
+							<li>
+								If both players lay down the same hand, each player lays down
+								another hand
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="next-button" onclick="window.location.href ='hurray.html'">
+				NEXT
+			</div>
+			<div id="rules-button">RULES</div>
+		</div>
+	</body>
+</html>

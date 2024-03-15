@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="index.css" />
+		<script>
+			window.addEventListener("DOMContentLoaded", function () {
+				document
+					.getElementById("rules-button")
+					.addEventListener("click", function () {
+						let noticeBox = document.getElementById("notice-board");
+						noticeBox.style.display = "block";
+						document.getElementById("rules-button").style.display = "none";
+					});
+
+				document.getElementById("cross").addEventListener("click", function () {
+					let noticeBox = document.getElementById("notice-board");
+					noticeBox.style.display = "none";
+					document.getElementById("rules-button").style.display = "block";
+				});
+			});
+		</script>
+	</head>
+	<body style="background-color: #8cc461">
+		<div class="wrapper">
+			<div
+				style="
+					height: 800px;
+					width: 1000px;
+					margin-left: 0%;
+					display: flex;
+					flex-direction: column;
+				">
+				<img
+					src="attachment.png"
+					alt="stars"
+					style="
+						margin-left: 25%;
+						margin-top: 10%;
+						height: 297px;
+						width: 500px;
+					" />
+				<img
+					src="Vector.svg"
+					alt="trophy"
+					style="
+						height: 200px;
+						width: 200px;
+						margin-left: 40%;
+						margin-top: -19%;
+					" />
+				<div style="height: 70%; width: 70%; margin-left: 15%">
+					<div style="color: white; text-align: center; margin-top: 5%">
+						<h1 style="font-size: 91px">HURRAY!!</h1>
+						<h2 style="font-size: 41px">YOU WON THE GAME</h2>
+					</div>
+					<div
+						style="
+							height: 44px;
+							width: 150px;
+							text-align: center;
+							margin-top: 15%;
+							margin-left: 40%;
+						">
+						<div class="new-game" onclick="window.location.href = 'index.html'">
+							PLAY AGAIN
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="notice-board">
+				<div id="cross">
+					<img
+						alt="cross"
+						src="X.svg"
+						width="35px"
+						height="35px"
+						style="margin-left: 10%; margin-top: 9%" />
+				</div>
+				<div id="notice-container">
+					<div id="notice">
+						<h1 style="text-align: center; margin-top: 7%">Game Rules</h1>
+						<ul>
+							<li>
+								Rock beats scissors, scissors beat paper, and paper beats rock.
+							</li>
+							<li>
+								Agree ahead of time whether you’ll count off “rock, paper,
+								scissors, shoot” or just “rock, paper, scissors.”
+							</li>
+							<li>
+								Use rock, paper, scissors to settle minor decisions or simply
+								play to pass the time
+							</li>
+							<li>
+								If both players lay down the same hand, each player lays down
+								another hand
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="rules-button">RULES</div>
+		</div>
+	</body>
+</html>

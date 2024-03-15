@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	background-color: #8cc461;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#scoreboard {
+	width: 800px;
+	border: 2px solid white;
+	border-radius: 15px;
+	margin-top: 3.5%;
+	height: 158px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#game-title {
+	margin: 1%;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#all-scores {
+	display: flex;
+	width: 40%;
+	justify-content: space-evenly;
+	padding-top: 1.5%;
+}
+
+.scores {
+	border: 1px solid white;
+	height: 128px;
+	width: 139px;
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.score-title {
+	color: #656565;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 3%;
+}
+
+.individual-score {
+	height: 50%;
+	margin-top: 2%;
+	text-align: center;
+	font-size: 65px;
+	font-weight: bold;
+}
+
+.hands {
+	width: 476px;
+	height: 430px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 100px;
+	background-image: url(bg-triangle.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.scissor {
+	margin-left: 40px;
+}
+
+.rock {
+	margin-right: 40px;
+}
+
+.hands .hand {
+	cursor: pointer;
+	transition: all 0.25s;
+}
+
+.hands .hand:hover {
+	transform: translate3d(0px, -8px, 0px);
+}
+
+.contest {
+	width: 900px;
+	display: flex;
+	margin-top: 10%;
+	height: 30%;
+	display: none;
+}
+
+.contest > div {
+	flex: 1;
+}
+
+.contest h1 {
+	color: white;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.contest .handImageContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.contest .referee {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.referee h1 {
+	font-size: 45px;
+}
+
+.new-game {
+	background-color: white;
+	padding: 12px 24px;
+	border-radius: 6px;
+	cursor: pointer;
+	color: #656565;
+	transition: all 0.15s;
+}
+
+.new-game:hover {
+	background-color: bisque;
+	transform: translate3d(0px, -2px, 0px);
+}
+
+.decision {
+	width: 80%;
+	height: 35%;
+	margin-bottom: 6%;
+}
+
+#message1 {
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+#message2 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#notice-board {
+	height: 500px;
+	width: 500px;
+	right: 0;
+	position: fixed;
+	margin-top: 20%;
+	margin-right: 0.5%;
+	padding-top: 2.5%;
+	display: none;
+	text-transform: none;
+}
+
+#cross {
+	border: 10px solid white;
+	height: 65px;
+	width: 65px;
+	right: 0;
+	position: absolute;
+	border-radius: 100%;
+	background-color: red;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none; /* Remove default list style */
+}
+
+ul li::marker {
+	content: "■"; /* Use a solid square character for the marker */
+	color: yellow; /* Change the color to yellow */
+	font-size: 24px; /* Adjust the font size to make the squares bigger */
+}
+
+ul li {
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+#notice {
+	border: 1px solid white;
+	width: 320px;
+	height: 375px;
+	margin-top: 3.5%;
+	color: white;
+	padding-right: 5%;
+	margin-left: 4%;
+	background-color: #004429;
+	border-radius: 5px;
+}
+
+#notice-container {
+	border: 1px solid white;
+	height: 400px;
+	width: 345px;
+	margin-top: 10%;
+	background-color: white;
+	border-radius: 5px;
+	margin-left: 20%;
+	margin-top: 10%;
+}
+
+#rules-button {
+	height: 40px;
+	width: 119px;
+	right: 0;
+	position: fixed;
+	border: 2px solid white;
+	margin-top: 47%;
+	margin-right: 1%;
+	text-align: center;
+	padding-top: 0.3%;
+	border-radius: 5px;
+	letter-spacing: 4px;
+	font-size: large;
+	color: white;
+	font-weight: semi-bold;
+	cursor: pointer;
+}
+
+#next-button {
+	display: none;
+	height: 40px;
+	width: 119px;
+	right: 0;
+	position: fixed;
+	border: 2px solid white;
+	margin-top: 47%;
+	margin-right: 10%;
+	text-align: center;
+	padding-top: 0.3%;
+	border-radius: 5px;
+	letter-spacing: 4px;
+	font-size: large;
+	color: white;
+	font-weight: semi-bold;
+	cursor: pointer;
+	justify-content: center;
+}
