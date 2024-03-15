@@ -174,6 +174,8 @@ const playAgain = () => {
 
 	let hands = document.querySelector(".hands");
 	hands.style.display = "flex";
+
+	document.getElementById("next-button").style.display = "none";
 };
 
 const updateScores = (winner) => {
