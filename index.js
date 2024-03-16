@@ -45,7 +45,7 @@ const pickUserHand = (hand) => {
 
 const pickComputerHand = () => {
 	const options = ["rock", "paper", "scissor"];
-	const index = Math.floor(Math.random() * 2);
+	const index = Math.floor(Math.random() * 3);
 	return options[index];
 };
 
