@@ -230,7 +230,7 @@ ul li {
 	height: 40px;
 	width: 119px;
 	right: 0;
-	position: absolute;
+	position: fixed;
 	border: 2px solid white;
 	margin-top: 47%;
 	margin-right: 1%;
@@ -249,7 +249,7 @@ ul li {
 	height: 40px;
 	width: 119px;
 	right: 0;
-	position: absolute;
+	position: fixed;
 	border: 2px solid white;
 	margin-top: 47%;
 	margin-right: 10%;
