@@ -170,7 +170,7 @@ body {
 	width: 500px;
 	right: 0;
 	position: fixed;
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-right: 0.5%;
 	padding-top: 2.5%;
 	display: none;
@@ -232,7 +232,7 @@ ul li {
 	right: 0;
 	position: fixed;
 	border: 2px solid white;
-	margin-top: 40%;
+	margin-top: 41%;
 	margin-right: 1%;
 	text-align: center;
 	padding-top: 0.3%;
@@ -251,7 +251,7 @@ ul li {
 	right: 0;
 	position: fixed;
 	border: 2px solid white;
-	margin-top: 47%;
+	margin-top: 41%;
 	margin-right: 10%;
 	text-align: center;
 	padding-top: 0.3%;
